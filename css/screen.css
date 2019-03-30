@@ -1,0 +1,88 @@
+#thumbs-wrapper, #viewer-wrapper, #setup-wrapper {
+	padding: 15px;
+}
+
+#thumbs-wrapper, #viewer-wrapper, #setup-wrapper, #viewer-nav, #thumbs-nav {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#viewer-wrapper {
+	height: 348px;
+}
+
+#gallery-viewer {
+	height: 100%;
+}
+
+#gallery-viewer img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#viewer-nav, #thumbs-nav {
+	height: 30px;
+}
+
+#viewer-nav {
+	margin-top: 2px;
+}
+
+#thumbs-nav {
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+#thumbs-nav p {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+#gallery-next, #gallery-viewer-next, #gallery-prev, #gallery-viewer-prev {
+	text-indent: -9999px;
+	margin: 6.5px 25px;
+	height: 17px;
+	width: 16px;
+	background-image: url('../images/spt_arrows.png');
+	background-repeat: no-repeat;
+}
+
+#gallery-next, #gallery-viewer-next {
+	background-position: -16px 0;
+	float: right;
+}
+
+#gallery-prev, #gallery-viewer-prev {
+	float: left;
+}
+
+.thumbnail {
+	float: left;
+	width: 140px;
+	height: 138px;
+}
+
+/* -------- Setup -------- */
+
+#setup-wrapper p, pre, dl {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+pre {
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+code {
+	font-weight: normal;
+}
+
+dd {
+	margin-bottom: 10px;
+}
+
+.gallery-labels {
+	margin-left: 10px;
+}
