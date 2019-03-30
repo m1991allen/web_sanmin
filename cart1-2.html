@@ -1,0 +1,2454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/tabs.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <!--勿動↓-->
+    <script src="org/jquery-1.12.2.min.js"></script>
+    <script src="org/jquery-1.9.1.min.js"></script>
+    <link href="org/bootstrap.min.css" rel="stylesheet">
+    <link href="org/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="org/bootstrap.min.js"></script>
+    <link href="org/cache_css.css?v=2018072609" rel="stylesheet" />
+    <script src="org/cache_jquery.js?v=2018072609"></script>
+    <script src="org/cache_modernizr.js?v=2018072609"></script>
+    <!--勿動↑-->
+
+    <style>
+        .HeadImg {
+                width: 100%;
+                height: 145px;
+            }
+        </style>
+
+    <title>訂單內容</title>
+</head>
+
+<body>
+    <div class="imgZoomBox" style="display:none;">
+        <button class="imgZoomClose"><i class="fas fa-times"></i> Close</button>
+        <div id="ninja-slider1">
+            <div class="slider-inner1">
+                <ul>
+                    <li>
+                        <a class="ns-img1" href="images/display.svg"></a>
+                    </li>
+                    <li>
+                        <a class="ns-img1" href="images/aboutbook1.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="ns-img1" href="images/aboutbook2.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="ns-img1" href="images/aboutbook3.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="ns-img1" href="images/aboutbook4.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 頁首選單 mobile -->
+    <div class="mobileBurgerMenu">
+        <div class="mobileMenu" id="mbMenu">
+            <ul class="main-mobileMenu">
+                <a href="javascript:;">
+                    <li>
+                        <img class="top-icon" src="images/icon_briefcase.svg" alt=""> 企業採購</li>
+                </a>
+                <a href="javascript:;">
+                    <li>
+                        <img class="top-icon" src="images/icon_user-plus.svg" alt=""> 加入會員</li>
+                </a>
+                <a href="javascript:;">
+                    <li>
+                        <img class="top-icon" src="images/icon_lock.svg" alt=""> 會員登入</li>
+                </a>
+                <a href="javascript:;">
+                    <li>
+                        <img class="top-icon" src="images/icon_user.svg" alt=""> 會員專區</li>
+                </a>
+                <a href="javascript:;">
+                    <li>
+                        <img class="top-icon" src="images/icon_cart.svg" alt=""> 購物車(0)</li>
+                </a>
+                <a href="javascript:;">
+                    <li>
+                        <img class="top-icon" src="images/icon_gift.svg" alt=""> 紅利兌換</li>
+                </a>
+                <a href="javascript:;">
+                    <li>
+                        <img class="top-icon" src="images/icon_question-circle.svg" alt=""> 客服中心</li>
+                </a>
+                <a href="javascript:;">
+                    <li>
+                        <img class="top-icon" src="images/icon_bullhorn.svg" alt=""> 門市專區</li>
+                </a>
+            </ul>
+            <ul class="cd-accordion-menu animated">
+                <li class="has-children">
+                    <input type="checkbox" name="group-1" id="group-1">
+                    <label for="group-1">三民東大
+                        <i class="fas fa-angle-down"></i>
+                    </label>
+                    <ul class="child-menu">
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-1" id="sub-group-1">
+                            <label for="sub-group-1">童書
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">兒童文學叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">小小導遊系列</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">小普羅</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">兒童讀物</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">探索英文叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Fun心讀雙語叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">愛閱雙語叢書</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-2" id="sub-group-2">
+                            <label for="sub-group-2">高中職/國中
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">高中</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">高職</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">考試用書/高中</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">考試用書/高職</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">考試用書/國中</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-3" id="sub-group-3">
+                            <label for="sub-group-3">考試/專業書
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">總類</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">語文</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">國父遺教</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">法律</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">政治‧外交‧行政</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">社會‧社工</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">教育‧心理</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">新聞傳播</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">商管財經&餐旅觀光</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">歷史‧地理</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">哲學</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">宗教</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">科學</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">藝術</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">其他</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">運動</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">論文寫作</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-4" id="sub-group-4">
+                            <label for="sub-group-4">三民叢書
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">古籍今注新譯</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">國學大叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">中國古典名著</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">世界文學</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">二十世紀文學名家大賞</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">LIFE系列</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">人文叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">世紀文庫</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">三民文庫</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">三民叢刊</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">文苑叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">錢穆作品精萃</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">逯耀東作品集</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">經典系列</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">西潮文庫</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">文明叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">原住民叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">應用叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">文學流域</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">中國語文系列</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">文學評論叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">山河叢刊</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">西洋文學文化意識叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">日本學叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">世界思想文化史叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">世界哲學家</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">李澤厚論著集</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">哲學輕鬆讀</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">說史</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">歷史聚焦</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">國別史</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">中國古典名著</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">塩野七生作品集</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">歐洲系列</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">許倬雲作品集</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">中國現代史叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">中國斷代史</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">歷史天空</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">歷史新視界</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">生活‧歷史</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">辭典</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">生死學叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">宗教文庫</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">現代佛學叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">生活法律漫談叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">法學啟蒙叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">理律法律叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">新世紀法學叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">法學叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">音樂不一樣</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">普羅藝術</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">藝術解碼叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">藝遊未盡</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">鸚鵡螺數學叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">養生智慧</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">現代中醫</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">養生‧方技</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">滄海美術</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">滄海叢刊</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">外文</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">親子叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">新世紀科技叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">陶百川全集</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">前瞻叢書Frontier</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">現代社會學叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">圖書資訊學叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">古籍重刊</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">臺灣研究論叢</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">人類學與社會文化叢書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">現代中醫</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">親子
+                        <i class="fas fa-angle-down"></i>
+                    </label>
+                    <ul class="child-menu">
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-5" id="sub-group-5">
+                            <label for="sub-group-5">親子館
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">書籍分齡</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">原文童書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">中文童書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">親子用品</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-6" id="sub-group-6">
+                            <label for="sub-group-6">親子共讀
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">兒童文學</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">童謠</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">童話</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">自然科學</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">算數</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">藝術</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">寫作</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">語言學習</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">親子教育</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">繪本</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-7" id="sub-group-7">
+                            <label for="sub-group-7">得獎作品
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">金鼎獎</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">金漫獎</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">中小學生優良課外讀物</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">好書大家讀</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">公務人員每月一書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">金書獎</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">開卷好書</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">國際書展大獎</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-8" id="sub-group-8">
+                            <label for="sub-group-8">作者、繪者推薦
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">五味太郎</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">艾瑞‧卡爾</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">工藤紀子</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">岩井俊雄</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">郝廣才</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">賴馬</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">酪梨壽司</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">木村裕一</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">吉竹伸介</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">渡邊有一</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">西村敏雄</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-9" id="sub-group-9">
+                            <label for="sub-group-9">出版社專區
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">Nosy Crow UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Capstone</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Workman</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Candlewick</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Templar</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Usborne</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">三民</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">三采文化</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">讀書共和國</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">上誼文化</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">上人文化</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">小魯文化</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">小熊</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">小典藏</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">小天下</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">大穎文化</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">九歌</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">米奇巴克</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">水滴文化</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">字畝文化</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">格林文化</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">親子天下</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">東方</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">聯經</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">青林</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">和英</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-3" id="group-3">
+                    <label for="group-3">外文
+                        <i class="fas fa-angle-down"></i>
+                    </label>
+                    <ul class="child-menu">
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-10" id="sub-group-10">
+                            <label for="sub-group-10">外文館
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">文學</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">非文學</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">語言電腦</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">生活休閒</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">青少年兒童</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-11" id="sub-group-11">
+                            <label for="sub-group-11">杜威圖書分類法
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">Generalities & computer science</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Philosophy and Psycholog</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Religion</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Social Sciences</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Language</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Natural sciences & mathematics</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Technology (Applied sciences)</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">The arts</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Literature and rhetoric</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Geography & history</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <input type="checkbox" name="sub-group-12" id="sub-group-12">
+                            <label for="sub-group-12">出版社專區
+                                <i class="fas fa-angle-down"></i>
+                            </label>
+                            <ul class="sublist">
+                                <li>
+                                    <a href="javascript:;">Mcgraw-Hill</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">John Wiley</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Cambridge Univ Pr</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Random House US</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Simon & Schuster</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">HarperCollins US</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Hachette US</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Scholastic</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Penguin US</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">HarperCollins UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Random House UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Macmillan US</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Macmillan UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Penguin UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Hachette UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Bloomsbury UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Usborne Publishing</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Walker & Candlewick</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Wolters Kluwer Health</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Tate Publishing UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Wide Eyed Editions UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">JY Books</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Two Ponds</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Child's Play UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Phaidon UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Thames & Hudson UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Laurence King UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Lonely Planet</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Make Believe Ideas</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Gestalten</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Little Tiger Press UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">DK UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Nosy Crow</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Templar Publishing</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Egmont</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Faber & Faber</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Oxford University Press</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Quarto UK</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Quarto US</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Bloomsbury US</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Taylor & Francis</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Edward Elgar Publishing</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">簡體</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">文具禮品</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">生活市集</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">漫畫</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">教科考用</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">政府出版</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">香港出版</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">大學出版</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">得獎作品</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">暢銷榜</label>
+                </li>
+                <li class="has-children">
+                    <input type="checkbox" name="group-2" id="group-2">
+                    <label for="group-2">加價購</label>
+                </li>
+            </ul>
+            <!-- end cd-accordion-menu	 -->
+        </div>
+    </div>
+    <div id="coverMask"></div>
+    <div id="coverMaskAsk"></div>
+    <!-- end 頁首選單 mobile -->
+    <div id="gotop">
+        <img src="images/gotop.png" alt="">
+    </div>
+    <!-- <div id="gotop">˄<br>Top</div> -->
+    <div class="layout" id="layout">
+        <!-- 下方按鈕 mobile -->
+        <div class="bottomButtonMobile">
+            <div class="bottomButton">
+                <div style="width:100px; background:white;white-space: nowrap;">
+                    <div class="mobile-store">
+                        <!-- <i class="fas fa-barcode"></i> -->
+                        <br> 庫存：<span>>5</span>
+                    </div>
+                </div>
+                <div style="width:15%;">
+                    <button type="button" class="bottomBtn">
+                        <i class="fas fa-heart"></i>
+                        <br>
+                    </button>
+                </div>
+                <div style="width:35%;">
+                    <button type="button" class="bottomBtn" style="background: #307283;color: white;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <br> 快速到貨
+                    </button>
+                </div>
+                <div style="width:50%;">
+                    <button type=" button" class="bottomBtn" style="background: #825267;color: white;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <br> 一般購物車
+                    </button>
+                </div>
+                <!-- 
+                <div>
+                    <button type="button" class="bottomBtn">
+                        <i class="fas fa-user"></i>
+                        <br> 會員專區
+                    </button>
+                </div> -->
+            </div>
+        </div>
+        <!-- end 下方按鈕 mobile -->
+        <header>
+            <!--頁首選單 full screen -->
+            <div class="mainMenu">
+                <div class="leftMenu">
+                    <ul class="main-left-menu">
+                        <a href="javascript:;">
+                            <li>
+                                <i class="fas fa-briefcase"></i> 企業採購</li>
+                        </a>
+                        <a href="javascript:;">
+                            <li>
+                                <i class="fas fa-user-plus"></i> 加入會員</li>
+                        </a>
+                        <a href="javascript:;">
+                            <li>
+                                <i class="fas fa-unlock-alt"></i> 會員登入</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="rightMenu">
+                    <ul class="main-right-menu">
+                        <a href="javascript:;">
+                            <li>
+                                <i class="fas fa-user"></i> 會員專區</li>
+                        </a>
+                        <a href="javascript:;">
+                            <li>
+                                <i class="fas fa-shopping-cart"></i> 購物車(0)</li>
+                        </a>
+                        <a href="javascript:;">
+                            <li>
+                                <i class="fas fa-gift"></i> 紅利兌換</li>
+                        </a>
+                        <a href="javascript:;">
+                            <li>
+                                <i class="fas fa-question-circle"></i> 客服中心</li>
+                        </a>
+                        <a href="javascript:;">
+                            <li>
+                                <i class="fas fa-bullhorn"></i> 門市專區</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!-- end 頁首選單 full screen -->
+            <!-- 頁首按鈕 mobile -->
+            <div class="mobileTopArea">
+                <div class="leftIconBtn">
+                    <div class="iconBtn" id="bgButton1">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="iconBtn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div id="space">
+                    <div class="centerLogo">
+                        <a href="index.html">
+                            <img src="images/mobileLogo.png">
+                        </a>
+                    </div>
+                    <div class="rightIconBtn">
+                        <div class="iconBtn">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="iconBtn">
+                            <i class="fas fa-shopping-cart"></i>(0)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end 頁首按鈕 mobile -->
+        </header>
+
+        <!--top bn-->
+        <div style="width:100%;margin:0 auto;" class="topBgHead">
+            <div style="position:absolute; margin-top:41px; background:url('images/test/314.gif') no-repeat top;" class="HeadImg">
+                <table style="max-width:1055px;margin:0 auto;height: 145px;width: 100%;">
+                    <tr>
+                        <td style="width:20%;height:145px;"><a href="http://@(ServerName)/home/index.html" style="width:100%;height:145px;"></a></td>
+                        <td style="width:18%;height:145px;"><a href="@item.Value" target="_blank" style="width:100%;height:145px;"></a></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--top bn-->
+
+        <!-- logo & 搜尋欄 -->
+        <div class="topBgArea" onmouseenter="dropdownhide()">
+            <div class="fullScreenSearchBar">
+                <div class="topArea">
+                    <div class="logo">
+                        <!--<a href="index.html">
+							<img src="images/logo1.png">
+						</a>-->
+                    </div>
+                    <div class="searchBar " style=" z-index: 1;">
+                        <div>
+                            <span class="icon">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <input type="search" id="qu" placeholder="請輸入關鍵字" />
+                        </div>
+                        <select class="classSearch">
+                            <option value="class1">分類</option>
+                            <option value="class2">分類</option>
+                            <option value="class3">分類</option>
+                            <option value="class4">分類</option>
+                        </select>
+                        <button class="btnSearchGo" type="button">GO</button>
+                        <button class="btnSearch" type="button">進階搜尋</button>
+
+
+                        <!-- full screen hot-search -->
+                        <div class="hot-search">
+                            <p>
+                                <span class="sell-price">熱搜：</span>
+                                <span style="white-space:nowrap;"><a href="javascript:void(0); " style="color:black;">Simon&Schuster</a>、</span>
+                                <span style="white-space:nowrap;"><a href="javascript:void(0); " style="color:black;">玄幻武俠小說
+                                        黃易
+                                    </a>、</span>
+                                <span style="white-space:nowrap;"><a href="javascript:void(0); " style="color:black;">哈利波特/怪獸與牠們的產地</a>、</span>
+                                <span style="white-space:nowrap;"><a href="javascript:void(0); " style="color:black;">新海誠
+                                        你的名字
+                                    </a>、</span>
+                                <span style="white-space:nowrap;"><a href="javascript:void(0); " style="color:black;">Lulu
+                                        系列
+                                    </a>、</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end logo & 搜尋欄 -->
+        <div class="mobileSearchBar" id="clickSearchBar">
+            <div class="topArea">
+                <div class="searchBar">
+                    <select class="classSearch">
+                        <option value="class1">分類</option>
+                        <option value="class2">分類</option>
+                        <option value="class3">分類</option>
+                        <option value="class4">分類</option>
+                    </select>
+                    <div>
+                        <input type="search" id="qu" placeholder="請輸入關鍵字" />
+                        <span class="icon">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+
+                    <br><br>
+                    <div class="searchkey">
+                        <hr />
+                        <span>KEY、KEY、KEY、KEY、KEY、KEY、</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 書籍分類選單 -->
+        <div class="topMenu">
+            <div class="classMenu">
+                <!-- full screen -->
+                <div class="classTopMenu">
+                    <ul class="class-top-menu">
+                        <a href="javascript:;" id="dpMenu1" onmouseenter="dropdownshow('1')">
+                            <li>三民東大</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu2" onmouseenter="dropdownshow('2')">
+                            <li>親子</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu3" onmouseenter="dropdownshow('3')">
+                            <li>外文</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu4" onmouseenter="dropdownshow('4')">
+                            <li>簡體</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu5">
+                            <li>文具禮品</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu6">
+                            <li>生活市集</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu7">
+                            <li>漫畫</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu8">
+                            <li>教科考用</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu9">
+                            <li>政府出版</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu10">
+                            <li>香港出版</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu11">
+                            <li>大學出版</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu12">
+                            <li>得獎作品</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu13">
+                            <li>暢銷榜</li>
+                        </a>
+                        <a href="javascript:;" id="dpMenu14">
+                            <li>加價購</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end 書籍分類選單 -->
+        <!-- 下拉書籍分類選單-三民東大 -->
+        <div class="dropdown-menurwd" id="dropdown-menu1" style="display: none;">
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>童書</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">兒童文學叢書</a>
+                    <a href="javascript:;">小小導遊系列</a>
+                    <a href="javascript:;">小普羅</a>
+                    <a href="javascript:;">兒童讀物</a>
+                    <a href="javascript:;">探索英文叢書</a>
+                    <a href="javascript:;">Fun心讀雙語叢書</a>
+                    <a href="javascript:;">愛閱雙語叢書</a>
+                </div>
+                <div class="book-class-title">
+                    <h4>高中職/國中</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">高中</a>
+                    <a href="javascript:;">高職</a>
+                    <a href="javascript:;">考試用書/高中</a>
+                    <a href="javascript:;">考試用書/高職</a>
+                    <a href="javascript:;">考試用書/國中</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>考試/專業書</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">總類</a>
+                    <a href="javascript:;">語文</a>
+                    <a href="javascript:;">國父遺教</a>
+                    <a href="javascript:;">法律</a>
+                    <a href="javascript:;">政治‧外交‧行政</a>
+                    <a href="javascript:;">社會‧社工</a>
+                    <a href="javascript:;">教育‧心理</a>
+                    <a href="javascript:;">新聞傳播</a>
+                    <a href="javascript:;">商管財經&餐旅觀光</a>
+                    <a href="javascript:;">歷史‧地理</a>
+                    <a href="javascript:;">哲學</a>
+                    <a href="javascript:;">宗教</a>
+                    <a href="javascript:;">科學</a>
+                    <a href="javascript:;">藝術</a>
+                    <a href="javascript:;">其他</a>
+                    <a href="javascript:;">運動</a>
+                    <a href="javascript:;">論文寫作</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>三民叢書</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">古籍今注新譯</a>
+                    <a href="javascript:;">國學大叢書</a>
+                    <a href="javascript:;">中國古典名著</a>
+                    <a href="javascript:;">世界文學</a>
+                    <a href="javascript:;">二十世紀文學名家大賞</a>
+                    <a href="javascript:;">LIFE系列</a>
+                    <a href="javascript:;">人文叢書</a>
+                    <a href="javascript:;">世紀文庫</a>
+                    <a href="javascript:;">三民文庫</a>
+                    <a href="javascript:;">三民叢刊</a>
+                    <a href="javascript:;">文苑叢書</a>
+                    <a href="javascript:;">錢穆作品精萃</a>
+                    <a href="javascript:;">逯耀東作品集</a>
+                    <a href="javascript:;">經典系列</a>
+                    <a href="javascript:;">西潮文庫</a>
+                    <a href="javascript:;">文明叢書</a>
+                    <a href="javascript:;">原住民叢書</a>
+                    <a href="javascript:;">應用叢書</a>
+                    <a href="javascript:;">文學流域</a>
+                    <a href="javascript:;">中國語文系列</a>
+                    <a href="javascript:;">古籍今注新譯</a>
+                    <a href="javascript:;">國學大叢書</a>
+                    <a href="javascript:;">中國古典名著</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title" style="display: none;">
+                    <h4>三民叢書</h4>
+                </div>
+                <div class="book-class-sub" style="padding-top: 65px">
+                    <a href="javascript:;">世界文學</a>
+                    <a href="javascript:;">二十世紀文學名家大賞</a>
+                    <a href="javascript:;">LIFE系列</a>
+                    <a href="javascript:;">人文叢書</a>
+                    <a href="javascript:;">世紀文庫</a>
+                    <a href="javascript:;">三民文庫</a>
+                    <a href="javascript:;">三民叢刊</a>
+                    <a href="javascript:;">文苑叢書</a>
+                    <a href="javascript:;">錢穆作品精萃</a>
+                    <a href="javascript:;">逯耀東作品集</a>
+                    <a href="javascript:;">經典系列</a>
+                    <a href="javascript:;">西潮文庫</a>
+                    <a href="javascript:;">文明叢書</a>
+                    <a href="javascript:;">原住民叢書</a>
+                    <a href="javascript:;">應用叢書</a>
+                    <a href="javascript:;">文學流域</a>
+                    <a href="javascript:;">中國語文系列</a>
+                    <a href="javascript:;">文學評論叢書</a>
+                    <a href="javascript:;">山河叢刊</a>
+                    <a href="javascript:;">文學總論</a>
+                    <a href="javascript:;">西洋文學文化意識叢書</a>
+                    <a href="javascript:;">日本學叢書</a>
+                    <a href="javascript:;">世界思想文化史叢書</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title" style="display: none;">
+                    <h4>三民叢書</h4>
+                </div>
+                <div class="book-class-sub" style="padding-top: 65px">
+                    <a href="javascript:;">世界哲學家</a>
+                    <a href="javascript:;">李澤厚論著集</a>
+                    <a href="javascript:;">哲學輕鬆讀</a>
+                    <a href="javascript:;">說史</a>
+                    <a href="javascript:;">歷史聚焦</a>
+                    <a href="javascript:;">國別史</a>
+                    <a href="javascript:;">塩野七生作品集</a>
+                    <a href="javascript:;">歐洲系列</a>
+                    <a href="javascript:;">許倬雲作品集</a>
+                    <a href="javascript:;">中國現代史叢書</a>
+                    <a href="javascript:;">中國斷代史</a>
+                    <a href="javascript:;">歷史天空</a>
+                    <a href="javascript:;">歷史新視界</a>
+                    <a href="javascript:;">生活‧歷史</a>
+                    <a href="javascript:;">辭典</a>
+                    <a href="javascript:;">生死學叢書</a>
+                    <a href="javascript:;">宗教文庫</a>
+                    <a href="javascript:;">現代佛學叢書</a>
+                    <a href="javascript:;">生活法律漫談叢書</a>
+                    <a href="javascript:;">法學啟蒙叢書</a>
+                    <a href="javascript:;">理律法律叢書</a>
+                    <a href="javascript:;">新世紀法學叢書</a>
+                    <a href="javascript:;">法學叢書</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title" style="display: none;">
+                    <h4>三民叢書</h4>
+                </div>
+                <div class="book-class-sub" style="padding-top: 65px">
+                    <a href="javascript:;">大雅叢刊</a>
+                    <a href="javascript:;">音樂不一樣</a>
+                    <a href="javascript:;">普羅藝術</a>
+                    <a href="javascript:;">藝術解碼叢書</a>
+                    <a href="javascript:;">藝遊未盡</a>
+                    <a href="javascript:;">鸚鵡螺數學叢書</a>
+                    <a href="javascript:;">養生智慧</a>
+                    <a href="javascript:;">現代中醫</a>
+                    <a href="javascript:;">養生‧方技</a>
+                    <a href="javascript:;">滄海美術</a>
+                    <a href="javascript:;">滄海叢刊</a>
+                    <a href="javascript:;">外文</a>
+                    <a href="javascript:;">親子叢書</a>
+                    <a href="javascript:;">新世紀科技叢書</a>
+                    <a href="javascript:;">陶百川全集</a>
+                    <a href="javascript:;">前瞻叢書Frontier</a>
+                    <a href="javascript:;">現代社會學叢書</a>
+                    <a href="javascript:;">圖書資訊學叢書</a>
+                    <a href="javascript:;">古籍重刊</a>
+                    <a href="javascript:;">臺灣研究論叢</a>
+                    <a href="javascript:;">人類學與社會文化叢書</a>
+                </div>
+            </div>
+        </div>
+        <!-- end 下拉書籍分類選單 -->
+        <!-- 下拉書籍分類選單-親子 -->
+        <div class="dropdown-class-menu" id="dropdown-menu2" style="display: none;">
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>親子館</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">書籍分齡</a>
+                    <a href="javascript:;">原文童書</a>
+                    <a href="javascript:;">中文童書</a>
+                    <a href="javascript:;">親子用品</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>親子共讀</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">兒童文學</a>
+                    <a href="javascript:;">童謠</a>
+                    <a href="javascript:;">童話</a>
+                    <a href="javascript:;">自然科學</a>
+                    <a href="javascript:;">算數</a>
+                    <a href="javascript:;">藝術</a>
+                    <a href="javascript:;">寫作</a>
+                    <a href="javascript:;">語言學習</a>
+                    <a href="javascript:;">親子教育</a>
+                    <a href="javascript:;">繪本</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>得獎作品</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">金鼎獎</a>
+                    <a href="javascript:;">金漫獎</a>
+                    <a href="javascript:;">中小學生優良課外讀物</a>
+                    <a href="javascript:;">好書大家讀</a>
+                    <a href="javascript:;">公務人員每月一書</a>
+                    <a href="javascript:;">金書獎</a>
+                    <a href="javascript:;">開卷好書</a>
+                    <a href="javascript:;">國際書展大獎</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>作者、繪者推薦</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">五味太郎</a>
+                    <a href="javascript:;">艾瑞‧卡爾</a>
+                    <a href="javascript:;">工藤紀子</a>
+                    <a href="javascript:;">岩井俊雄</a>
+                    <a href="javascript:;">郝廣才</a>
+                    <a href="javascript:;">賴馬</a>
+                    <a href="javascript:;">酪梨壽司</a>
+                    <a href="javascript:;">木村裕一</a>
+                    <a href="javascript:;">吉竹伸介</a>
+                    <a href="javascript:;">渡邊有一</a>
+                    <a href="javascript:;">西村敏雄</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>出版社專區</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">Nosy Crow UK</a>
+                    <a href="javascript:;">Capstone</a>
+                    <a href="javascript:;">Workman</a>
+                    <a href="javascript:;">Candlewick</a>
+                    <a href="javascript:;">Templar</a>
+                    <a href="javascript:;">Usborne</a>
+                    <a href="javascript:;">三民</a>
+                    <a href="javascript:;">三采文化</a>
+                    <a href="javascript:;">讀書共和國</a>
+                    <a href="javascript:;">上誼文化</a>
+                    <a href="javascript:;">上人文化</a>
+                    <a href="javascript:;">小魯文化</a>
+                    <a href="javascript:;">小熊</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title" style="display: none;">
+                    <h4>出版社專區</h4>
+                </div>
+                <div class="book-class-sub" style="padding-top: 65px">
+                    <a href="javascript:;">小典藏</a>
+                    <a href="javascript:;">小天下</a>
+                    <a href="javascript:;">大穎文化</a>
+                    <a href="javascript:;">九歌</a>
+                    <a href="javascript:;">米奇巴克</a>
+                    <a href="javascript:;">水滴文化</a>
+                    <a href="javascript:;">字畝文化</a>
+                    <a href="javascript:;">格林文化</a>
+                    <a href="javascript:;">親子天下</a>
+                    <a href="javascript:;">東方</a>
+                    <a href="javascript:;">聯經</a>
+                    <a href="javascript:;">青林</a>
+                    <a href="javascript:;">和英</a>
+                </div>
+            </div>
+        </div>
+        <!-- end 下拉書籍分類選單 -->
+        <!-- 下拉書籍分類選單-外文 -->
+        <div class="dropdown-class-menu" id="dropdown-menu3" style="display: none;">
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>外文館</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">文學</a>
+                    <a href="javascript:;">非文學</a>
+                    <a href="javascript:;">語言電腦</a>
+                    <a href="javascript:;">生活休閒</a>
+                    <a href="javascript:;">青少年兒童</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>杜威圖書分類法</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">Generalities & computer science</a>
+                    <a href="javascript:;">Philosophy and Psycholog</a>
+                    <a href="javascript:;">Religion</a>
+                    <a href="javascript:;">Social Sciences</a>
+                    <a href="javascript:;">Language</a>
+                    <a href="javascript:;">Natural sciences & mathematics</a>
+                    <a href="javascript:;">Technology (Applied sciences)</a>
+                    <a href="javascript:;">The arts</a>
+                    <a href="javascript:;">Literature and rhetoric</a>
+                    <a href="javascript:;">Geography & history</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title">
+                    <h4>出版社專區</h4>
+                </div>
+                <div class="book-class-sub">
+                    <a href="javascript:;">Mcgraw-Hill</a>
+                    <a href="javascript:;">John Wiley</a>
+                    <a href="javascript:;">Cambridge Univ Pr</a>
+                    <a href="javascript:;">Random House US</a>
+                    <a href="javascript:;">Simon & Schuster</a>
+                    <a href="javascript:;">HarperCollins US</a>
+                    <a href="javascript:;">Hachette US</a>
+                    <a href="javascript:;">Scholastic</a>
+                    <a href="javascript:;">Penguin US</a>
+                    <a href="javascript:;">HarperCollins UK</a>
+                    <a href="javascript:;">Random House UK</a>
+                    <a href="javascript:;">Macmillan US</a>
+                    <a href="javascript:;">Macmillan UK</a>
+                    <a href="javascript:;">Penguin UK</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title" style="display: none;">
+                    <h4>出版社專區</h4>
+                </div>
+                <div class="book-class-sub" style="padding-top: 65px">
+                    <a href="javascript:;">Hachette UK</a>
+                    <a href="javascript:;">Bloomsbury UK</a>
+                    <a href="javascript:;">Usborne Publishing</a>
+                    <a href="javascript:;">Walker & Candlewick</a>
+                    <a href="javascript:;">Wolters Kluwer Health</a>
+                    <a href="javascript:;">Tate Publishing UK</a>
+                    <a href="javascript:;">Wide Eyed Editions UK</a>
+                    <a href="javascript:;">JY Books</a>
+                    <a href="javascript:;">Two Ponds</a>
+                    <a href="javascript:;">Child's Play UK</a>
+                    <a href="javascript:;">Phaidon UK</a>
+                    <a href="javascript:;">Thames & Hudson UK</a>
+                    <a href="javascript:;">Laurence King UK</a>
+                    <a href="javascript:;">Lonely Planet</a>
+                </div>
+            </div>
+            <div class="menu-book-class">
+                <div class="book-class-title" style="display: none;">
+                    <h4>出版社專區</h4>
+                </div>
+                <div class="book-class-sub" style="padding-top: 65px">
+                    <a href="javascript:;">Make Believe Ideas</a>
+                    <a href="javascript:;">Gestalten</a>
+                    <a href="javascript:;">Little Tiger Press UK</a>
+                    <a href="javascript:;">DK UK</a>
+                    <a href="javascript:;">Nosy Crow</a>
+                    <a href="javascript:;">Templar Publishing</a>
+                    <a href="javascript:;">Egmont</a>
+                    <a href="javascript:;">Faber & Faber</a>
+                    <a href="javascript:;">Oxford University Press</a>
+                    <a href="javascript:;">Quarto UK</a>
+                    <a href="javascript:;">Quarto US</a>
+                    <a href="javascript:;">Bloomsbury US</a>
+                    <a href="javascript:;">Taylor & Francis</a>
+                    <a href="javascript:;">Edward Elgar Publishing</a>
+                </div>
+            </div>
+        </div>
+        <!-- end 下拉書籍分類選單 -->
+        <!-- 上方按鈕 mobile -->
+        <div class="topButtonMobile">
+            <div class="topButton">
+                <div>
+                    <button type="button" class="topBtn">最新消息</button>
+                </div>
+                <div>
+                    <button type="button" class="topBtn">簡體新到貨</button>
+                </div>
+                <div>
+                    <button type="button" class="topBtn">外文新到貨</button>
+                </div>
+            </div>
+        </div>
+        <!-- end 上方按鈕 mobile -->
+        <!-- 跑馬燈 full screen -->
+        <div class="topNews">
+            <div class="topNewsLeft">
+                <a href="javascript:;">
+                    <p>
+                        <span style="color:yellow">NEW </span>書裡的三百個世界精選好書5折~66折</p>
+                </a>
+            </div>
+            <div class="topNewsRight">
+                <a href="javascript:;">
+                    <p>
+                        <i class="fas fa-ban"></i> 165反詐騙</p>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cart-sched">
+                <div class="cart-flow-sched">
+                    <div class="flow-step-icon">
+                        <div class="flow-step">
+                            <img src="images/flow-cart-w.svg" alt="" style="width:32px; ">
+                        </div>
+                    </div>
+                    <div class="flow-step-line">
+                        <p>購物明細</p>
+                    </div>
+                    <div class="flow-step-icon">
+                        <div class="flow-step-w">
+                            <img src="images/flow-list.svg" alt="" style="width:32px;">
+                        </div>
+                    </div>
+                    <div class="flow-step-line-w">
+                        <p>遞送與付款方式</p>
+                    </div>
+                    <div class="flow-step-icon">
+                        <div class="flow-step-w">
+                            <img src="images/flow-fast.svg" alt="" style="width:32px;">
+                        </div>
+                    </div>
+                    <div class="flow-step-line-w">
+                        <p>訂單確認</p>
+                    </div>
+                    <div class="flow-step-icon">
+                        <div class="flow-step-w">
+                            <img src="images/flow-check.svg" alt="" style="width:32px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-sched-mobile">
+                <div class="cart-sched-layout">
+                    <div class="flow-step-icon">
+                        <div class="flow-step">
+                            <img src="images/flow-cart-w.svg" alt="" style="width:32px; ">
+                        </div>
+                    </div>
+                    <div class="flow-step-line">
+                        <p>購物明細</p>
+                    </div>
+                </div>
+                <div class="cart-sched-layout">
+                    <div class="flow-step-icon">
+                        <div class="flow-step-w">
+                            <img src="images/flow-list.svg" alt="" style="width:32px; ">
+                        </div>
+                    </div>
+                    <div class="flow-step-line-w">
+                        <p>遞送與付款方式</p>
+                    </div>
+                </div>
+                <div class="cart-sched-layout">
+                    <div class="flow-step-icon">
+                        <div class="flow-step-w">
+                            <img src="images/flow-fast.svg" alt="" style="width:32px; ">
+                        </div>
+                    </div>
+                    <div class="flow-step-line-w">
+                        <p>訂單確認</p>
+                    </div>
+                </div>
+                <div class="cart-sched-layout">
+                    <div class="flow-step-icon">
+                        <div class="flow-step-w">
+                            <img src="images/flow-check.svg" alt="" style="width:32px; ">
+                        </div>
+                    </div>
+                    <div class="flow-step-line-w">
+                        <p>送達</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newBookTab" id="bookTab" style="margin: 10px 0;">
+                <div class="tab tabActive" id="booktb1">
+                    <p class="slide-font">購物車</p>
+                    <span class="tab-num">
+                        <p>2</p>
+                    </span>
+                </div>
+                <div class="tab" id="booktb2">
+                    <p class="slide-font">快速到貨</p>
+                    <span class="tab-num">
+                        <p>15</p>
+                    </span>
+                </div>
+                <div class="tab" id="booktb2">
+                    <p class="slide-font">廠商出貨</p>
+                    <span class="tab-num">
+                        <p>15</p>
+                    </span>
+                </div>
+                <div class="tab" id="booktb2">
+                    <p class="slide-font">收藏清單</p>
+                </div>
+            </div>
+            <div class="cart-cont cart-cont-full">
+                <table class="cart-info">
+                    <tr class="cart-info-title">
+                        <td> <input type="checkbox"> </td>
+                        <td style="width: 50%;">商品</td>
+                        <td>售價 <i class="fas fa-sort"></i></td>
+                        <td>數量 <i class="fas fa-sort"></i></td>
+                        <td>小計 <i class="fas fa-sort"></i></td>
+                        <td>庫存 <i class="fas fa-sort"></i></td>
+                        <td>刪除</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> <span>1.</span></th>
+                        <th class="cart-prd">
+                            <div><img src="images/aboutbook1.jpg" alt=""></div>
+                            <div style="padding:10px;">
+                                <ul class="cart-prd-status">
+                                    <li>ISBN13：9789861303871</li>
+                                    <li class="prd-title">艾蜜莉會計師教你聰明節稅：圖解個人所得
+                                        、房地產、投資理財、遺贈稅
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th>237元</th>
+                        <th>
+                            <select name="" id="" class="prd-num">
+                                <option value="" selected="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th class="cart-del"><img src="images/trash.svg" alt=""></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> <span>2.</span></th>
+                        <th class="cart-prd">
+                            <div><img src="images/aboutbook2.jpg" alt=""></div>
+                            <div style="padding:10px;">
+                                <ul class="cart-prd-status">
+                                    <li>ISBN13：9789861303871</li>
+                                    <li class="prd-title">艾蜜莉會計師教你聰明節稅：圖解個人所得
+                                        、房地產、投資理財、遺贈稅
+                                    </li>
+                                </ul>
+                                <div style="text-align: left;">
+                                    <button class="resultConditAd">66折</button>
+                                </div>
+                            </div>
+                        </th>
+                        <th>237元</th>
+                        <th>
+                            <select name="" id="" class="prd-num">
+                                <option value="" selected="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th class="cart-del"><img src=" images/trash.svg" alt=""></th>
+                    </tr>
+                </table>
+                <table class="cart-info">
+                    <h3 style="margin-bottom:0px;">紅利積點兌換</h3>
+                    <tr class="cart-info-title">
+                        <td><input type="checkbox"></td>
+                        <td style="width: 50%;">商品</td>
+                        <td>售價 <i class="fas fa-sort"></i></td>
+                        <td>數量 <i class="fas fa-sort"></i></td>
+                        <td>小計 <i class="fas fa-sort"></i></td>
+                        <td>庫存 <i class="fas fa-sort"></i></td>
+                        <td>刪除</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> <span>1.</span></th>
+                        <th class="cart-prd">
+                            <div><img src="images/aboutbook1.jpg" alt=""></div>
+                            <div style="padding:10px;">
+                                <ul class="cart-prd-status">
+                                    <li>ISBN13：9789861303871</li>
+                                    <li class="prd-title">艾蜜莉會計師教你聰明節稅：圖解個人所得
+                                        、房地產、投資理財、遺贈稅
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th>237元</th>
+                        <th>
+                            <select name="" id="" class="prd-num">
+                                <option value="" selected="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th class="cart-del"><img src="images/trash.svg" alt=""></th>
+                    </tr>
+                </table>
+                <div class="cart-ps">
+                    <ul class="cart-ps-gift">
+                        <li>風神／雷神便條紙（贈品）x 1 <button class="gift-tab">讀書共和國-日本文化書展 x 1</button></li>
+                        <li>便條紙（贈品）x 1 <button class="gift-tab">讀書共和國-日本文化書展 x 1</button></li>
+                    </ul>
+                    <div class="cart-ctrl-layout">
+                        <div class="cart-cont-ctrl">
+                            <div class="cart-ctrl">
+                                <button class="more"><i class="fas fa-trash-alt"></i> 全部清空</button>
+                            </div>
+                            <div class="cart-ctrl">
+                                <select name="" id="" class="cart-change-item">
+                                    <option value="" selected>勾選商品變動</option>
+                                    <option value="">option1</option>
+                                    <option value="">option2</option>
+                                    <option value="">option3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cart-cont-ctrl item-right">
+                            <div class="cart-ctrl">
+                                <select name="" id="" class="cart-change-item">
+                                    <option value="" selected>其他功能</option>
+                                    <option value="">option1</option>
+                                    <option value="">option2</option>
+                                    <option value="">option3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-cont cart-cont-mobile">
+                <div class="cart-info">
+                    <h3 style="margin-bottom:0px;">
+                        <div><input type="checkbox"></div>
+                    </h3>
+                    <div>
+                        <div class="cart-prd">
+                            <div><input type="checkbox"></div>
+                            <div><img src="images/aboutbook1.jpg" alt=""></div>
+                            <div style="padding:10px;">
+                                <ul class="cart-prd-status">
+                                    <li>ISBN13：9789861303871</li>
+                                    <li class="prd-title">艾蜜莉會計師教你聰明節稅：圖解個人所得
+                                        、房地產、投資理財、遺贈稅
+                                    </li>
+                                </ul>
+                                <div class="cart-prd-layout">
+                                    <div>
+                                        <select name="" id="" class="prd-num" style="width:100%">
+                                            <option value="" selected="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                    </div>
+                                    <div style="text-align:right">
+                                        <span class="sell-price">237</span> 元
+                                    </div>
+                                </div>
+                                <div style="text-align: left;">
+                                    <button class="resultConditAd">9折</button>
+                                    <button class="resultConditAd">有庫存</button>
+                                    <button class="resultConditAd">每日66折限購一本優惠</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-prd">
+                            <div><input type="checkbox"></div>
+                            <div><img src="images/aboutbook1.jpg" alt=""></div>
+                            <div style="padding:10px;">
+                                <ul class="cart-prd-status">
+                                    <li>ISBN13：9789861303871</li>
+                                    <li class="prd-title">艾蜜莉會計師教你聰明節稅：圖解個人所得
+                                        、房地產、投資理財、遺贈稅
+                                    </li>
+                                </ul>
+                                <div class="cart-prd-layout">
+                                    <div>
+                                        <select name="" id="" class="prd-num" style="width:100%">
+                                            <option value="" selected="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                    </div>
+                                    <div style="text-align:right">
+                                        <span class="sell-price">237</span> 元
+                                    </div>
+                                </div>
+                                <div style="text-align: left;">
+                                    <button class="resultConditAd">9折</button>
+                                    <button class="resultConditAd">有庫存</button>
+                                    <button class="resultConditAd">每日66折限購一本優惠</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-info">
+                    <h3 style="margin-bottom:0px;">紅利積點兌換</h3>
+                    <div>
+                        <div class="cart-prd">
+                            <div> <input type="checkbox"> </div>
+                            <div><img src="images/aboutbook1.jpg" alt=""></div>
+                            <div style="padding:10px;">
+                                <ul class="cart-prd-status">
+                                    <li>ISBN13：9789861303871</li>
+                                    <li class="prd-title">艾蜜莉會計師教你聰明節稅：圖解個人所得
+                                        、房地產、投資理財、遺贈稅
+                                    </li>
+                                </ul>
+                                <div class="cart-prd-layout">
+                                    <div>
+                                        <select name="" id="" class="prd-num" style="width:100%">
+                                            <option value="" selected="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                    </div>
+                                    <div style="text-align:right">
+                                        <span class="sell-price">237</span> 點
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-ps">
+                    <ul class="cart-ps-gift">
+                        <li>風神／雷神便條紙（贈品）x 1 <button class="gift-tab">讀書共和國-日本文化書展 x 1</button></li>
+                        <li>便條紙（贈品）x 1 <button class="gift-tab">讀書共和國-日本文化書展 x 1</button></li>
+                    </ul>
+                    <div class="cart-ctrl-layout">
+                        <div class="cart-cont-ctrl">
+                            <div class="cart-ctrl">
+                                <button class="more"><i class="fas fa-trash-alt"></i> 全部清空</button>
+                            </div>
+                            <div class="cart-ctrl">
+                                <select name="" id="" class="cart-change-item">
+                                    <option value="" selected>勾選商品變動</option>
+                                    <option value="">option1</option>
+                                    <option value="">option2</option>
+                                    <option value="">option3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-cont1">
+                <h3>購物車訊息</h3>
+                <div class="cart-note">預購商品需等候商品進貨後才可出貨。</div>
+            </div>
+            <div class="cart-cont2">
+                <h3>折價券／圖書禮券 <i class="fas fa-question-circle qa-style"></i></h3>
+                <div class="cart-note">
+                    <div class="cart-buy-list">
+                        <div class="eq-title">
+                            <h4>E-Coupon</h4>
+                        </div>
+                        <div class="eq-select">
+                            <select name="" id="">
+                                <option value="1">請選擇</option>
+                                <option value="1">1234-5678</option>
+                                <option value="1">1234-5678</option>
+                            </select>
+                            <p class="sell-price">總金額差126元即可使用折價券</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-note">
+                    <div class="cart-note-layout">
+                        <div class="cart-buy-list">
+                            <div class="eq-title">
+                                <h4>禮券序號</h4>
+                            </div>
+                            <div class="eq-select">
+                                <select name="" id="">
+                                    <option value="1">請選擇</option>
+                                    <option value="1">1234-5678</option>
+                                    <option value="1">1234-5678</option>
+                                </select>
+                                <p class="sell-price">可折抵總金額474元</p>
+                            </div>
+                        </div>
+                        <div class="cart-buy-list">
+                            <button class="more">加入 100 元</button>
+                            <button class="more">加入 200 元</button>
+                            <button class="more">加入 500 元</button>
+                        </div>
+                    </div>
+                    <div class="cart-dis">
+                        <p class="sell-price">＊注意：單筆訂單僅能使用一種現金折抵／折價券</p>
+                        <div class="cart-dis-item">
+                            <div class="cart-buy-list">
+                                <p style="font-size:16px;">1.陸以正時事評論展50元圖書禮券</p>
+                            </div>
+                            <div class="cart-buy-list">
+                                <p class="rela-mobile">-50元</p>
+                                <select name="" id="" class="prd-num-select">
+                                    <option value="" selected>1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                                <p><span class="sell-price">-50</span>元</p>
+                                <button class="resultConditAd" id="">刪除</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hint-box">
+                <div class="cart-hint" style="text-align: center;">共 <span class="sell-price">3</span>項商品，商品含內容物共
+                    <span class="sell-price">5</span>件，扣除紅利積點
+                    <span class="sell-price">237</span>點，商品總金額 <span class="sell-price">474</span>元。
+                </div>
+            </div>
+            <div class="cart-hint-dis">
+                <div style="margin: 10px auto;">
+                    <div>
+                        <img src="images/light.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="sell-price"> 總金額差25元可享便利店免運費服務。</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: right; margin-bottom:30px ">
+                <button class="check-next">下一步</button>
+            </div>
+            <div class="cart-cont3">
+                <h3>重要提醒 <i class="fas fa-question-circle qa-style"></i></h3>
+                <div class="cart-important">
+                    <h4>免運費說明</h4>
+                    <div class="cart-important-item">
+                        <p>1.便利商店：訂單實付金額滿350元。</p>
+                        <p>2.宅配到府：訂單實付金額滿1000元（須先來款，不包含快遞與貨到付款）。</p>
+                        <p>3.親自取貨：至三民書局復北、重南門市自取。</p>
+                        <p>4.香港便利店、海外訂單及快遞恕不適用。</p>
+                        <p class="sell-price">＊折價券、圖書禮券或其他特殊優惠等僅可擇一使用。</p>
+                        <p class="sell-price">＊購物車資料會保留一個星期。若不希望該資料被清空，您可放入「加入收藏清單」。如遇商品調價，則以購買時網頁價格為準。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newBookTab" id="bookTab" style="margin: 10px 0;">
+                <div class="tab tabActive" id="booktb1">
+                    <p>加價購</p>
+                </div>
+                <div class="tab" id="booktb2">
+                    <p>每週66折</p>
+                </div>
+                <div class="tab" id="booktb2">
+                    <p>紅利積點兌換</p>
+                </div>
+            </div>
+            <section class="product5_slider" id="book-tab3">
+                <div class="owl-carousel">
+                    <a href="javascript:void(0)" class="item">
+                        <div class="relaBook">
+                            <div class="rela-prd rela-prd-non">
+                                <p class="rela-prd-hint">點數不足未滿 300點</p>
+                                <div>
+                                    <div class="add-price non-prd">
+                                        <img src="images/new_arrival1.png">
+                                        <div style="text-align:left;">
+                                            <h3>A Dog's Purpose（Movie Tie）</h3>
+                                            <h4>原價：850元</h4>
+                                            <h4>加購價：
+                                                <span class="add-dis">66</span>折
+                                                <span class="add-dis-price">383</span>元</h4>
+                                            <div style="text-align: center;">
+                                                <button class="addCart" type="button">
+                                                    <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rela-prd rela-mobile">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <div style="text-align: center;">
+                                            <button class="addCart" type="button">
+                                                <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="item">
+                        <div class="relaBook">
+                            <div class="rela-prd">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <div style="text-align: center;">
+                                            <button class="addCart" type="button">
+                                                <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rela-prd rela-mobile">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <div style="text-align: center;">
+                                            <button class="addCart" type="button">
+                                                <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="item">
+                        <div class="relaBook">
+                            <div class="rela-prd">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <div style="text-align: center;">
+                                            <button class="addCart" type="button">
+                                                <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rela-prd rela-mobile">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <div style="text-align: center;">
+                                            <button class="addCart" type="button">
+                                                <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="item">
+                        <div class="relaBook">
+                            <div class="rela-prd">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <div style="text-align: center;">
+                                            <button class="addCart" type="button">
+                                                <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rela-prd rela-mobile">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <div style="text-align: center;">
+                                            <button class="addCart" type="button">
+                                                <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="item">
+                        <div class="relaBook">
+                            <div class="rela-prd">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <div style="text-align: center;">
+                                            <button class="addCart" type="button">
+                                                <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rela-prd rela-mobile">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <div style="text-align: center;">
+                                            <button class="addCart" type="button">
+                                                <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="item">
+                        <div class="relaBook">
+                            <div class="rela-prd">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <button class="addCart" type="button">
+                                            <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rela-prd rela-mobile">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <button class="addCart" type="button">
+                                            <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="item">
+                        <div class="relaBook">
+                            <div class="rela-prd">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <button class="addCart" type="button">
+                                            <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rela-prd rela-mobile">
+                                <div class="add-price">
+                                    <img src="images/new_arrival1.png">
+                                    <div style="text-align:left;">
+                                        <h3>A Dog's Purpose（Movie Tie）</h3>
+                                        <h4>原價：850元</h4>
+                                        <h4>加購價：
+                                            <span class="add-dis">66</span>折
+                                            <span class="add-dis-price">383</span>元</h4>
+                                        <button class="addCart" type="button">
+                                            <i class="fas fa-shopping-cart"></i> 加入購物車</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topBookPage">
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                </div>
+            </section>
+            <div style="text-align: right; margin-bottom:30px ">
+                <button class="check-next">更多＋</button>
+            </div>
+        </div>
+        <footer>
+            <div class="content">
+                <div class="fb">
+                    <div class="block">
+                        <div id="fb-root"></div>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsanminfans%2F&tabs=timeline&width=340&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=231535363937338"
+                            width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true"></iframe>
+                        <div id="fb-root"></div>
+                        <script>
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src =
+                                    'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12&appId=231535363937338&autoLogAppEvents=1';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-page" data-href="https://www.facebook.com/sanminfans/" data-small-header="true"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/sanminfans/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/sanminfans/">三民書局與三民網路書店</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="footerLogo">
+                        <img src="images/footer_logo.png">
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="blockTitle">
+                        <h2>聯絡資訊 >> </h2>
+                    </div>
+                    <div class="block">
+                        <div class="section">
+                            <h4>
+                                <i class="fas fa-map-marker-alt"></i> 網路書店</h4>
+                            <p>台北市復興北路386號</p>
+                            <p>客服電話：
+                                <a href="tel:0225006600">02-2500-6600</a>轉 130、131</p>
+                            <p>客服信箱：
+                                <a href="mailto:ec@sanmin.com.tw">ec@sanmin.com.tw</a>
+                            </p>
+                        </div>
+                        <div class="section">
+                            <h4>
+                                <i class="fas fa-map-marker-alt"></i> 復北店</h4>
+                            <p>台北市復興北路386號</p>
+                            <p>客服電話：
+                                <a href="tel:0225006600">02-2500-6600</a>
+                            </p>
+                            <p>營業時間：AM9:00 - PM10:00</p>
+                        </div>
+                        <div class="section">
+                            <h4>
+                                <i class="fas fa-map-marker-alt"></i> 重南店</h4>
+                            <p>台北市重慶南路一段61號</p>
+                            <p>客服電話：
+                                <a href="tel:0223617511">02-2361-7511</a>
+                            </p>
+                            <p>營業時間：AM9:00 - PM10:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="guild">
+                    <div class="blockTitle">
+                        <h2>網站導航 >> </h2>
+                    </div>
+                    <div class="block">
+                        <div class="section">
+                            <p class="about-footer">
+                                <a href="javascript:;">關於我們</a> &nbsp;
+                                <a href="javascript:;">人才招募</a> &nbsp;
+                                <a href="javascript:;">禮券兌換</a> &nbsp;
+                                <a href="javascript:;">常見問題</a> &nbsp;
+                                <a href="javascript:;">通關密碼</a> &nbsp;
+                                <a href="javascript:;">古籍・古典圖書目錄</a> &nbsp;
+                                <a href="javascript:;">三民・東大・弘雅圖書目錄</a> &nbsp;
+                                <a href="javascript:;">學習網</a>
+                            </p>
+                        </div>
+                        <div class="section">
+                            <p class="buy-footer">
+                                <a href="javascript:;">新手購書</a> &nbsp;
+                                <a href="javascript:;">空中大學購書專區</a>
+                            </p>
+                            <div class="Logistics">
+                                <img src="images/buy1.png">
+                                <img src="images/buy2.png">
+                            </div>
+                        </div>
+                        <div class="section">
+                            <p class="subs-footer-full">
+                                <a href="javascript:;">企業合作</a> &nbsp;
+                                <a href="javascript:;">異業合作</a> &nbsp;
+                                <a href="javascript:;">圖書館採購/編目</a> &nbsp;
+                                <a href="javascript:;">好站連結</a> &nbsp;
+                                <a href="javascript:;">訂閱電子報</a> &nbsp;
+                                <a href="javascript:;">切換手機版</a>
+                            </p>
+                            <p class="subs-footer">
+                                <a href="javascript:;">訂閱電子報</a> &nbsp;
+                                <a href="javascript:;">切換電腦版</a>
+                            </p>
+                            <div class="social">
+                                <!--<img src="images/facebook.png">-->
+                                <img src="images/sanminline.png">
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="copyright">
+                                <p>本站著作權屬三民書局股份有限公司及相關著作權所有人所有</p>
+                                <p>Copyright © San Min Book Co.,Ltd. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <style>
+        .fs-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(0, 0, 0, 0.1) url(fullscreen.png) no-repeat 0 0;
+            z-index: 2;
+            -webkit-transition: opacity 0.8s;
+            transition: opacity 0.8s;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--js-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.fadethis.js"></script>
+    <script src="js/effects-core.min.js"></script>
+    <script src="js/action.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/slider_detail.js"></script>
+
+    <!--owl-->
+    <link rel="stylesheet" type="text/css" href="js/owl/owl.carousel.css">
+    <script src="js/owl/owl.carousel.js"></script>
+
+    <!-- gallery slider -->
+    <!-- // -->
+    <link href="js/gallery/zoom-slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/gallery/zoom-slider.js" type="text/javascript"></script>
+    <link href="js/gallery/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/gallery/thumbnail-slider.js" type="text/javascript"></script>
+    <link href="js/gallery/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/gallery/ninja-slider.js" type="text/javascript"></script>
+</body>
+
+</html>
